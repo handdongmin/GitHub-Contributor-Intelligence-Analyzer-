@@ -103,6 +103,8 @@ SUMMARIZER_MODEL=csebuetnlp/mT5_multilingual_XLSum
 API_BASE=http://127.0.0.1:8000
 ```
 - GPU가 있으면 torch/transformers가 자동 활용(없어도 CPU로 동작).
+- GPU 실행시 CUDA 지원 버전 pytorch 설치 
+      (pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121)
 
 3) 백엔드 실행 (FastAPI)
 ```bash
@@ -137,11 +139,11 @@ streamlit run frontend/app.py
 ```
 
 ## UI 사용 흐름 (Streamlit)
-- 사이드바: GitHub 사용자명 입력 후 공개 리포지토리 목록 불러오기, 또는 owner/repo를 수동 입력 → 기간 설정 → “분석 실행”.
+- 사이드바: GitHub 사용자명 입력 후 공개 리포지토리 목록 불러오기 → 기간 설정 → “분석 실행”.
 - 개요 탭: 커밋/이슈 카운트, 의미 클러스터 요약, 토픽 모델 결과, 전체 요약 텍스트.
 - 활동 히트맵 탭: 날짜별 커밋 히트맵, streak/최대 활동일/요일별 패턴 요약, 원본 테이블.
 - ML 실험실 탭:  
-  - Summarize: 텍스트 붙여넣기 → 요약  
+  - Summarize: 텍스트 요약  
   - Cluster: 여러 문서 입력 → k 자동/수동 클러스터링  
   - Topics: 문서 모음 → LDA 토픽  
   - Predictivity: 활동 통계 테이블 편집 → 회귀 결과/feature importance 시각화
@@ -161,7 +163,49 @@ streamlit run frontend/app.py
 - **GitHub API rate limit**: `.env`에 `GITHUB_TOKEN`을 설정해 요청 한도를 늘림
 
 ## Demo & Screenshots
-- (예시) `docs/overview.png`, `docs/heatmap.png`, `docs/ml_lab.png`  
+
+### Web
+![Web](docs/web.png)
+
+### Fetch repository
+![Fetch_repo](docs/import_repo.png)
+
+### Overview
+![Overview] (docs/overview.png)
+
+### Clustering
+![Clustering] (docs/cluster.png)
+
+![Clustering2] (docs/cluster2.png)
+
+### Topic modeling
+![Topic_modeling] (docs/cluster3.png)
+
+![Topic_modeling2] (docs/cluster4.png)
+
+### Heatmap
+![Heatmap] (docs/heatmap.png)
+
+![Heatmap2] (docs/heatmap2.png)
+
+### ML Lab
+![ML_Lab] (docs/mllab.png)
+
+![ML_Lab2] (docs/mllab2.png)
+
+![ML_Lab3] (docs/mllab3.png)
+
+![ML_Lab4] (docs/mllab4.png)
+
+![ML_Lab5] (docs/mllab5.png)
+
+![ML_Lab6] (docs/mllab6.png)
+
+![ML_Lab7] (docs/mllab7.png)
+
+![ML_Lab8] (docs/mllab8.png)
+
+
 
 ## Credits & References
 - Sentence Embeddings: sentence-transformers  
@@ -172,7 +216,7 @@ streamlit run frontend/app.py
 
 ## 사용 라이선스(출처)
 - FastAPI (MIT) — https://github.com/fastapi/fastapi/blob/master/LICENSE  
-/- Uvicorn (BSD-3-Clause) — https://github.com/encode/uvicorn/blob/master/LICENSE.md  
+- Uvicorn (BSD-3-Clause) — https://github.com/encode/uvicorn/blob/master/LICENSE.md  
 - Requests (Apache-2.0) — https://github.com/psf/requests/blob/main/LICENSE  
 - python-dotenv (MIT) — https://github.com/theskumar/python-dotenv/blob/master/LICENSE  
 - pydantic-settings (MIT) — https://github.com/pydantic/pydantic-settings/blob/main/LICENSE  
@@ -188,7 +232,8 @@ streamlit run frontend/app.py
 - gensim (LGPL-2.1) — https://github.com/RaRe-Technologies/gensim/blob/develop/LICENSE  
 - sentencepiece (Apache-2.0) — https://github.com/google/sentencepiece/blob/master/LICENSE  
 - streamlit (Apache-2.0) — https://github.com/streamlit/streamlit/blob/develop/LICENSE  
-- 제출 전에 각 프로젝트의 LICENSE를 다시 확인하세요.
+- 요약 모델: 'csebuetnlp/mT5_multilingual_XLSum' (CC BY-NC-SA 4.0)
+- 클러스터링 모델: 'all-mpnet-base-v2' (Apache-2.0)
 
 ## 프로젝트 라이선스
 MIT
