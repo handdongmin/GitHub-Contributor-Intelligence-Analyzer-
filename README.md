@@ -168,42 +168,42 @@ streamlit run frontend/app.py
 ![Web](docs/web.png)
 
 ### Fetch repository
-![Fetch_repo](docs/import_repo.png)
+![Fetch_repo](docs/fetch_repo.png)
 
 ### Overview
-![Overview] (docs/overview.png)
+![Overview](docs/overview.png)
 
 ### Clustering
-![Clustering] (docs/cluster.png)
+![Clustering](docs/cluster.png)
 
-![Clustering2] (docs/cluster2.png)
+![Clustering2](docs/cluster2.png)
 
 ### Topic modeling
-![Topic_modeling] (docs/cluster3.png)
+![Topic_modeling](docs/cluster3.png)
 
-![Topic_modeling2] (docs/cluster4.png)
+![Topic_modeling2](docs/cluster4.png)
 
 ### Heatmap
-![Heatmap] (docs/heatmap.png)
+![Heatmap](docs/heatmap.png)
 
-![Heatmap2] (docs/heatmap2.png)
+![Heatmap2](docs/heatmap2.png)
 
 ### ML Lab
-![ML_Lab] (docs/mllab.png)
+![ML_Lab](docs/mllab.png)
 
-![ML_Lab2] (docs/mllab2.png)
+![ML_Lab2](docs/mllab2.png)
 
-![ML_Lab3] (docs/mllab3.png)
+![ML_Lab3](docs/mllab3.png)
 
-![ML_Lab4] (docs/mllab4.png)
+![ML_Lab4](docs/mllab4.png)
 
-![ML_Lab5] (docs/mllab5.png)
+![ML_Lab5](docs/mllab5.png)
 
-![ML_Lab6] (docs/mllab6.png)
+![ML_Lab6](docs/mllab6.png)
 
-![ML_Lab7] (docs/mllab7.png)
+![ML_Lab7](docs/mllab7.png)
 
-![ML_Lab8] (docs/mllab8.png)
+![ML_Lab8](docs/mllab8.png)
 
 
 
