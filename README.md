@@ -167,26 +167,38 @@ streamlit run frontend/app.py
 ### Web
 ![Web](docs/web.png)
 
+
+
 ### Fetch repository
 ![Fetch_repo](docs/fetch_repo.png)
 
+
+
 ### Overview
 ![Overview](docs/overview.png)
+
+
 
 ### Clustering
 ![Clustering](docs/cluster.png)
 
 ![Clustering2](docs/cluster2.png)
 
+
+
 ### Topic modeling
 ![Topic_modeling](docs/cluster3.png)
 
 ![Topic_modeling2](docs/cluster4.png)
 
+
+
 ### Heatmap
 ![Heatmap](docs/heatmap.png)
 
 ![Heatmap2](docs/heatmap2.png)
+
+
 
 ### ML Lab
 ![ML_Lab](docs/mllab.png)
