@@ -10,8 +10,10 @@ scipy
 
 matplotlib
 seaborn
+altair
 
 scikit-learn
+
 
 transformers
 sentence-transformers
